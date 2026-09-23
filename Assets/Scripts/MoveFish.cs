@@ -20,7 +20,7 @@ public class MoveFish : MonoBehaviour
     {
         if (transform.position.y > -6)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - 0.02f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y - 0.001f, transform.position.z);
         } 
         else if (transform.position.y <= -6)
         {
