@@ -6,6 +6,7 @@ public class MovePlayer : MonoBehaviour
     float speed = 5f;
     public GameObject Spear;
     GameObject currentSpear;
+    int timeSincePress;
 
     bool spearThrown = false;
 
@@ -14,6 +15,7 @@ public class MovePlayer : MonoBehaviour
     {
         // Horizontal Movement
         float movementX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+        
         Vector3 position = transform.position;
         position.x += movementX;
         transform.position = position;
